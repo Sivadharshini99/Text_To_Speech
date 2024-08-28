@@ -10,7 +10,22 @@
 <body>
    <div id="container"> 
     <h2>Text To Speech</h2>
-    <textarea id="textToSpeech"></textarea>
+    <textarea id="textToSpeech" placeholder="Enter text here..."></textarea>
+
+    <div class="controls">
+        <label for="voices">Select Voice:</label>
+        <select id="voices"></select>
+    </div>
+    <div class="controls">
+        <label for="rate">Rate:</label>
+        <input type="range" id="rate" min="0.5" max="2" value="1" step="0.1">
+    </div>
+    <div class="controls">
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" min="0" max="1" value="1" step="0.1">
+    </div>
+
+
     <button onclick="speak()">Text to Speak</button>
    </div> 
 </body>
